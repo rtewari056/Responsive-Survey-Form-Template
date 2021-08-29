@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&amp;family=Bree+Serif&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Employee Satisfaction Survey</h1>
+        <p id="description"><em> Thank you for taking the time to help us improve the company</em></p>
+    </header>
+
+    <form action="" id="survey-form">
+
+        <div id="form-details">
+            <div class="details">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="details">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="details">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" name="number" id="number" min="13" max="60" placeholder="Enter your age">
+            </div>
+
+            <div class="details">
+                <label for="dropdown">Which option best describes your current role?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="select-option">Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="job-holder">Job Holder</option>
+                    <option value="business">Businessman / Business Woman</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="details">
+                <label>How would you describe your overall level of job satisfaction?</label>
+
+                <label>
+                    <input type="radio" name="user-satisfaction" value="very-satisfied">Very Satisfied
+                </label>
+
+                <label>
+                    <input type="radio" name="user-satisfaction" value="somewhat-satisfied">Somewhat Satisfied
+                </label>
+
+                
+                <label>
+                    <input type="radio" name="user-satisfaction" value="neutral">Neutral
+                </label>
+
+                
+                <label>
+                    <input type="radio" name="user-satisfaction" value="somewhat-dissatisfied">Somewhat Dissatisfied
+                </label>
+
+                
+                <label>
+                    <input type="radio" name="user-satisfaction" value="very-dissatisfied">Very Dissatisfied
+                </label>
+
+            </div>
+
+            <div class="details">
+                <label>
+                    What would you like to see improved? <small>(Check all that apply)</small>
+                </label>
+
+                <label>
+                    <input  type="checkbox" name="user-improvement" value="employee-training">Employee Training
+                </label>
+                <label>
+                    <input  type="checkbox" name="user-improvement" value="office-perks">Office Perks
+                </label>
+                <label>
+                    <input  type="checkbox" name="user-improvement" value="stock-options">Stock Options
+                </label>
+                <label>
+                    <input  type="checkbox" name="user-improvement" value="salary">Salary
+                </label>
+                <label>
+                    <input  type="checkbox" name="user-improvement" value="management">Management
+                </label>
+                <label>
+                    <input  type="checkbox" name="user-improvement" value="health-benefits">Health Benefits
+                </label>
+                <label>
+                    <input  type="checkbox" name="user-improvement" value="senior-leadership">Senior Leadership
+                </label>
+            </div>
+
+            <div class="details">
+                <label for="comment">Any comments or suggestions?</label>
+                <textarea name="comment" id="comment" rows="3"></textarea>
+            </div>
+
+            <div class="details">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
